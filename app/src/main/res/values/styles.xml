@@ -15,6 +15,86 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
+
+
+    <style name="moviesGridViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:columnWidth">150dp</item>
+        <item name="android:horizontalSpacing">0dp</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:verticalSpacing">0dp</item>
+    </style>
+
+    <style name="movieDetailsBackdrop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/details_backdrop_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:src">@color/movieDetailsBackdrop</item>
+    </style>
+
+    <style name="movieDetailsPoster">
+        <item name="android:layout_width">@dimen/details_poster_width</item>
+        <item name="android:layout_height">@dimen/details_poster_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <!--<item name="android:layout_marginStart">@dimen/margin_large</item>-->
+        <item name="android:layout_marginTop">@dimen/details_poster_margin_top</item>
+        <item name="android:src">@color/movieDetailsPoster</item>
+    </style>
+
+
+    <style name="movieDetailsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_marginEnd">@dimen/margin_large</item>-->
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <!--<item name="android:layout_marginStart">@dimen/margin_large</item>-->
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="movieDetailsReleaseDate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_marginEnd">@dimen/margin_default</item>-->
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_default</item>
+        <!--<item name="android:layout_marginStart">@dimen/margin_large</item>-->
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+    </style>
+
+    <style name="movieDetailsRating">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <!--<item name="android:layout_marginStart">@dimen/margin_large</item>-->
+        <item name="android:layout_marginTop">-8dp</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="movieDetailsSynopsis">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <!--<item name="android:layout_marginEnd">@dimen/margin_large</item>-->
+        <!--<item name="android:layout_marginStart">@dimen/margin_large</item>-->
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:lineSpacingMultiplier">@dimen/body_text_line_spacing</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+
 
 </resources>

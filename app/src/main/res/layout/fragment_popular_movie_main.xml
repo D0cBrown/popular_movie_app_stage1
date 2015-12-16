@@ -18,16 +18,8 @@
 
     <GridView
         android:id="@+id/movies_gridview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        style="@style/moviesGridViewStyle"
         android:layout_below="@+id/progressBar"
-        android:columnWidth="150dp"
-        android:gravity="center"
-        android:horizontalSpacing="0dp"
-        android:numColumns="auto_fit"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="0dp" />
+        />
 
 </RelativeLayout>

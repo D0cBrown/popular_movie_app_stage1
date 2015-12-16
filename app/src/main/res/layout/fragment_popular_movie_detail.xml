@@ -14,75 +14,49 @@
 
         <ImageView
             android:id="@+id/backdrop"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/details_backdrop_height"
+            style="@style/movieDetailsBackdrop"
             android:contentDescription="@string/content_desc_backdrop_image"
-            android:src="#D1C4E9" />
+            />
 
         <ImageView
             android:id="@+id/poster"
-            android:layout_width="@dimen/details_poster_width"
-            android:layout_height="@dimen/details_poster_height"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:layout_marginStart="@dimen/margin_large"
-            android:layout_marginTop="@dimen/details_poster_margin_top"
+            style="@style/movieDetailsPoster"
             android:contentDescription="@string/content_desc_movie_poster"
-            android:src="#9575CD" />
+             />
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/movieDetailsTitle"
             android:layout_below="@id/backdrop"
-            android:layout_marginEnd="@dimen/margin_large"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:layout_marginRight="@dimen/margin_large"
-            android:layout_marginStart="@dimen/margin_large"
-            android:layout_marginTop="@dimen/margin_default"
             android:layout_toEndOf="@id/poster"
             android:layout_toRightOf="@id/poster"
-            android:ellipsize="end"
-            android:maxLines="2"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
             />
 
         <TextView
             android:id="@+id/release_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/movieDetailsReleaseDate"
             android:layout_below="@id/title"
-            android:layout_marginEnd="@dimen/margin_default"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:layout_marginRight="@dimen/margin_default"
-            android:layout_marginStart="@dimen/margin_large"
-            android:layout_marginTop="2dp"
             android:layout_toEndOf="@id/poster"
             android:layout_toRightOf="@id/poster"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             />
 
         <LinearLayout
             android:id="@+id/rating_container"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/movieDetailsRating"
             android:layout_below="@id/release_date"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:layout_marginStart="@dimen/margin_large"
-            android:layout_marginTop="-8dp"
             android:layout_toEndOf="@id/poster"
             android:layout_toRightOf="@id/poster"
-            android:clipChildren="false"
-            android:gravity="bottom"
-            android:orientation="horizontal">
+            >
 
             <TextView
                 android:id="@+id/rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                android:textColor="?android:attr/textColorPrimary"
-                tools:text="7.2" />
+                android:textColor="@color/movieDetailsRating"
 
+                tools:text="7.2" />
+            <!--android:textColor="?android:attr/textColorPrimary"-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,17 +69,8 @@
 
         <TextView
             android:id="@+id/synopsis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/movieDetailsSynopsis"
             android:layout_below="@id/poster"
-            android:layout_centerHorizontal="true"
-            android:layout_marginEnd="@dimen/margin_large"
-            android:layout_marginLeft="@dimen/margin_large"
-            android:layout_marginRight="@dimen/margin_large"
-            android:layout_marginStart="@dimen/margin_large"
-            android:layout_marginTop="@dimen/margin_large"
-            android:lineSpacingMultiplier="@dimen/body_text_line_spacing"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             tools:text="" />
     </RelativeLayout>
 </ScrollView>
